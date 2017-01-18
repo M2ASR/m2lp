@@ -1,3 +1,6 @@
+INTRODUCTION
+------------
+
 M2LP is part of the M2ASR projected, and it is an open-source package for multi-minority langauge processing tasks.
 
 Multi-Minority Automatic Speech Recognition (M2ASR) is an NSFC-supported project, with the aim of providing speech
@@ -10,4 +13,11 @@ langauge modeling, and all the related resources, functions, and tools.
 
 The basic design principle is reusable and modulation. The functions will be implemented as functions written by 
 c/c++, python or perl, and the recipe will be a shell script that integrating modules by piple line.
+
+
+DIRECORY
+--------
+rc  : multilingual langauge resource
+src : source code for LP
+md  : model released
 
