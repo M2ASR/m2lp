@@ -1,0 +1,78 @@
+
+ # this file is the replacement code map file can be modified and expended. The format is the code representative with basic ASCII codes and their ID numbers. the left side or the target char must not be duplicated, but can be a double character representation. The existing data should only be modified without changing the format of the code lines. If the rightest column is missed, the left column is loaded as the default code.
+
+# below is the vowels , there are 8 vowels.
+a=1=1575
+A=2=1749
+e=3=1744
+i=4=1609
+o=5=1608
+O=6=1734
+u=7=1735
+U=8=1736
+
+# below is the amza, actually used as a syllable separator.
+
+v=33=1574
+
+# below is the surd consonents.
+
+w=9=1739
+r=10=1585
+y=11=1610
+N=12=1709
+h=13=1726
+d=14=1583
+J=15=1688
+g=16=1711
+j=17=1580
+l=18=1604
+z=19=1586
+gh=20=1594
+b=21=1576
+n=22=1606
+m=23=1605
+
+# below is the non-surd consonents.
+
+c=24=1670
+t=25=1578
+p=26=1662
+s=27=1587
+f=28=1601,1703
+H=29=1582
+q=30=1602
+k=31=1603
+sh=32=1588
+
+# above are phoneme representations.
+# below is the punctuation marks, there are wild duplications on the right side...
+
+-=34=8211,8722,1600
+,=35=1548
+.=36
+?=37=1567
+!=38
+;=39=1563
+:=40
+"=41=187,171
+_=42=8212
+
+%=54=1642
+
+
+
+#  above are the acii character within 127, mapped with other wild codes.
+
+
+EOF
+
+
+
+
+
+
+
+
+
+
