@@ -1,7 +1,7 @@
 #!python3.4
 
 class Mchar():
-	romancode = {} ; municode = {} ;
+	romancode = {} ; municode = {} 
 
 	def __init__(self, Lang):
 		self.Lang = Lang
@@ -233,8 +233,8 @@ class Mcount():
 			if "-" in ch: # acronym
 				if ch in self.acronDict: self.acronDict[ch] +=1
 				else:self.acronDict[ch] = 1
+				ret += 1
 			elif ch: self._word_vocab(ch)
-			ret += 1
 		return ret
 	# def _acron_vocab()
 
@@ -301,7 +301,7 @@ class Mcount():
 		for k in sorted(unitDict, key = unitDict.get, reverse = True):
 			val = unitDict[k]
 			if val >= filter_X:
-				line = "%s=%s\n" % (k, val)
+				line = "%s=%s\n" % (k, val) # for word, acronym
 				if unit == "char" or unit == "unk_char":
 					line = "%s=%d=%s\n" % (k,ord(k),val)
 				elif unit == "syllable":  # syllable export
@@ -504,7 +504,7 @@ class Kirghizchar(Mchar):
 if __name__ =="__main__":
 	mm = Mcount("Kazak")
 	#mm.Code_transform("kazaktext-200k.txt","")
-	mm.Token_Vocab("kazaktext-200k.txt_roman_word")
+	mm.Token_Vocab("kazaktext-200k.txt_roman")
 	mm.Particle_export("kazaktext-200k.txt_roman_adict", unit = "adict")
 	#mm.Export_units("kazaktext-200k.txt_roman_char", unit = "char")
 	#mm.Export_units("kazaktext-200k.txt_roman_unk_char", unit = "unk_char")

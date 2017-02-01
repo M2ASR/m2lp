@@ -1,0 +1,71 @@
+#This file is the fundamental cod-maps between various unicodes and their ASCII basic zone representations.
+ The format has three parts, first is the target ascii code, middle one is the codeID, last one is unicodes separated by comma "," which can be char or charID 
+ The existing data should only be modified without changing the format of the code lines.
+ The first part [left side] should only be a single char (not ascii code); but the right side can be double char (not codeID).
+#
+
+# below is the amza, used as a syllable separator.
+
+v=1=1569
+# below is the vowels , there are 9 vowels.
+
+e=2=1609,65263,64488,64489,65264
+i=3=1656
+a=4=1575,65166,65165
+E=5=1749,65258,65257
+A=6=1653
+o=7=1608,65262,65261
+O=8=1654
+u=9=1735,64472,64471,1736
+U=10=1655
+
+# below are the consonants.
+
+V=11=1734,64474
+b=12=1576,65169,65170
+l=13=1604,65248,65247,65246
+p=14=1662,64343,64344,64345,64342
+h=15=1581,65186,65188,65187
+w=16=1739,64478,1737,64479
+n=17=1606,65253,65254,65255,65256
+d=18=1583,65194,65193
+r=19=1585,65197,65198
+m=20=1605,65250,65249,65251,65252
+x=21=1588,65208,65207
+G=22=1593,65228,65227
+k=23=1603,65243,65242,65244
+j=24=1580,65184,65183
+z=25=1586,65200,65199
+g=26=1711,64405,64404
+N=27=1709,64467,64468,64470,64469
+y=28=1610,65267,65265,65266,65268
+f=29=1601,65236,65235
+q=30=1602,65238,65239,65240
+c=31=1670,64381,64380
+H=32=1726
+t=33=1578,65176,65175,65173,65174
+s=34=1587,65203,65202,65204,65201
+
+0=48=48
+1=49=49
+2=50=50
+3=51=51
+4=52=52
+5=53=53
+6=54=54
+7=55=55
+8=56=56
+9=57=57
+
+# below is the punctuation marks, there are wild duplication on the right side...
+
+*=42=1645
+,=44=1548
+"=134=171,187,8220,8221
+-=45=1600,8722,8211,173
+.=46=8230,65106
+_=95=8212
+:=58=65306
+
+EOF
+
